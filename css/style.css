@@ -16,156 +16,155 @@ html {
 }
 body {
     background: #000000;
-    margin:0;
-    font-family: 'Montserrat';
+    margin: 0;
+    font-family: "Montserrat";
     text-transform: uppercase;
-    color:#FFFFFF;
-    
-    }
-    
+    color: #ffffff;
+}
+
 img {
     display: block;
     width: 100%;
-    }
-
-p{
-text-transform: none;
 }
 
-.background{
+.photo-grid {
+    display: grid;
+    margin: 1em 10em 1em 10em;
+    gap: 1rem;
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
+}
+
+p {
+    text-transform: none;
+}
+
+.background {
     width: 100%;
 }
 
 .navigation {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #424C9F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #424c9f;
 }
 
 .logo a {
-  color: white;
+    color: white;
 }
 .logo {
-  padding-top: 15px;
-  padding-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .logo,
 .main-nav {
-  list-style: none;
+    list-style: none;
 }
 
 .logo a,
 .main-nav a {
-  text-decoration: none;
-  letter-spacing: 0.35rem;
+    text-decoration: none;
+    letter-spacing: 0.35rem;
 }
 .main-nav {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 .main-nav a {
-  display: block;
-  padding: 1em;
-  color: white;
+    display: block;
+    padding: 1em;
+    color: white;
 }
 
 .main-nav a {
-  text-align: center;
-  padding: 10px;
+    text-align: center;
+    padding: 10px;
 }
 
 /* WORK */
 .cards {
-  display: flex; 
-  justify-content: center;
-  flex-wrap: wrap;
-
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card {
-  background-color: white;
-  border: 1px solid gray;
-  border-radius: 0.5em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 250px;
-  max-width: 350px;
-  margin: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  position: relative;
-  top: 0;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 250px;
+    max-width: 350px;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 0;
 }
 .card:hover {
-  transition: all .1s ease-in;
-top: -2px;
-box-shadow: 0 4px 5px rgba(0,0,0,0.2);
-  
+    transition: all 0.1s ease-in;
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
 
 .cardphoto {
-  max-height: 250px;
-  overflow: hidden;
+    max-height: 250px;
+    overflow: hidden;
 }
 
 .cardarticle {
-  padding: 1.5rem;
+    padding: 1.5rem;
     flex: 1;
 }
 
 /* typography */
 .cardH1 {
-  font-size: 1rem;
-  margin: 0;
-  color: gray;
+    font-size: 1rem;
+    margin: 0;
+    color: gray;
 }
 
 .columns {
-  display: grid;
-  grid-gap: 1em;
-  margin: 40px;
-  max-width: 1100px;
-
+    display: grid;
+    grid-gap: 1em;
+    margin: 40px;
+    max-width: 1100px;
 }
-
 
 /* desktop */
 @media only screen and (min-width: 60em) {
-
     .main-nav {
-    flex-direction: row;
-    justify-content: space-around;
-  }
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
     .main-nav a {
-    border-top: none;
-    border-bottom: none;
-  }
-    
-.columns {
-    grid-template-columns: repeat(2, 1fr);
-    margin: 40px;
-  }
-  .image.one {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  .text.one {
-    grid-column: 2;
-    grid-row: 1;
-  }
-  .image.two {
-    grid-column: 2;
-    grid-row: 2;
-  }
-  .text.two {
-    grid-column: 1;
-    grid-row: 2;
-  }
-    
-    
-    
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .columns {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 40px;
+    }
+    .image.one {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .text.one {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .image.two {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .text.two {
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
