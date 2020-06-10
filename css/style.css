@@ -171,20 +171,11 @@ img {
   font-size: 5em;
 }
 
-/*.content {
-  margin: 0 auto;
-  max-width: 90ch;
-  height: 100vh;
-
-}
-*/
-
 .content {
   margin: 0 auto;
   max-width: 90ch;
   height: 100vh;
-  padding: 2rem;
-  scroll-snap-align: start;
+
 }
 
 .content article {
