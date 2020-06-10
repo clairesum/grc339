@@ -145,6 +145,7 @@ img {
 
 
 /*PARALLAX*/
+
 .headerbox {
   height: 20vh;
   position: relative;
@@ -170,11 +171,20 @@ img {
   font-size: 5em;
 }
 
-.content {
+/*.content {
   margin: 0 auto;
   max-width: 90ch;
   height: 100vh;
 
+}
+*/
+
+.content {
+  margin: 0 auto;
+  max-width: 90ch;
+  height: 100vh;
+  padding: 2rem;
+  scroll-snap-align: start;
 }
 
 .content article {
